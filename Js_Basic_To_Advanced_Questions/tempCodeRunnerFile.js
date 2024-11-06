@@ -1,1 +1,1 @@
-arr[i] === trackELement[j]
+...args.length
