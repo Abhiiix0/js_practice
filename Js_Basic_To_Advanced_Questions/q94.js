@@ -1,17 +1,15 @@
+// LeetCode 2623
 function memoize(fn) {
   const memoizesVal = {};
   return function (...args) {
-    const key = JSON.stringify(args);
-    if (memoizesVal[key]) {
-      console.log("memo");
+    const key = String(args);
+    if (key in memoizesVal) {
       return memoizesVal[key];
     } else {
-      console.log("new");
       const result = fn(...args);
       memoizesVal[key] = result;
+      return result;
     }
-
-    return Object.values(memoizesVal);
   };
 }
 const sum = (a, b) => a + b;
