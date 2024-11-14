@@ -1,3 +1,4 @@
+// Overriding: Redefining a method in the child class that already exists in the parent class.
 class Animal {
   Eat() {
     return "eat eat eat";
