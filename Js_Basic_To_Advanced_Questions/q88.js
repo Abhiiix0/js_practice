@@ -3,7 +3,7 @@
 const arr = [1, 2, 3, 8, 9];
 
 function DuplicateVal(arr) {
-  const seen = new Set();
+  const seen = [];
   for (let i = 0; i < arr.length; i++) {
     if (seen.has(arr[i])) {
       return true;

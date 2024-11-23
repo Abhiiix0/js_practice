@@ -11,5 +11,5 @@ const arr2 = [
   [3, [4, [5, [6]]], 7],
   [8, 9, 10],
 ];
-q9
+
 console.log(flat(arr2, 4));
